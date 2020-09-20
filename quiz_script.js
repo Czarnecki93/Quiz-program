@@ -24,19 +24,19 @@ var questions = [
         answer: "a"
     },
     {
-        prompt: "What is the name of the talking snowman in Disney's Frozen? \n a: Olaf \n b: Gandalf \b c: Harold",
+        prompt: "What is the name of the talking snowman in Disney's Frozen? \n a: Olaf \n b: Gandalf \n c: Harold",
         answer: "a"
     },
     {
         prompt: "In which year was the Microsoft XP operating system released? \n a: 1999 \n b: 2001 \n c: 2002",
-        answer: "b"
+        answer: "ba"
     }
 ]
 
 
 alert("Welcome to the quiz! To answer the questions, use your keyboard and write a, b or c and press OK.")
 
-var run_quiz = function() {
+function run_quiz() {
     var score = 0;
     for (let i = 0; i < questions.length; i++) {
         var response = window.prompt(questions[i].prompt);
