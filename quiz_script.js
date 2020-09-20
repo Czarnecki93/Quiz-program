@@ -9,16 +9,19 @@ var questions = [
     }
 ]
 
-var score = 0;
-alert("Welcome to the quiz! To answer the questions, use your keyboard and write a, b or c and press OK.")
-for (let i = 0; i < questions.length; i++) {
-    var response = window.prompt(questions[i].prompt);
-    if (response == questions[i].answer) {
-        score++;
-        alert("Correct!");
-    } else {
-        alert("I'm sorry, that's not the correct answer!");
-    }
-}
 
-alert(`You got ${score} out of ${questions.length} points.`);
+alert("Welcome to the quiz! To answer the questions, use your keyboard and write a, b or c and press OK.")
+
+var run_quiz = function() {
+    var score = 0;
+    for (let i = 0; i < questions.length; i++) {
+        var response = window.prompt(questions[i].prompt);
+        if (response == questions[i].answer) {
+            score++;
+            alert("Correct!");
+        } else {
+            alert("I'm sorry, that's not the correct answer!");
+        }
+    } alert(`You got ${score} out of ${questions.length} points.`);
+} 
+run_quiz();
