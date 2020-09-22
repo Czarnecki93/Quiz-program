@@ -29,7 +29,7 @@ var questions = [
     },
     {
         prompt: "In which year was the Microsoft XP operating system released? \n a: 1999 \n b: 2001 \n c: 2002",
-        answer: "ba"
+        answer: "b"
     }
 ]
 
